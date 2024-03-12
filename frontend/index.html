@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather-Design</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="input-field">
+        <input class="input" type="text" placeholder="Enter Location">
+        <button class="search">submit</button>
+    </div>
+    <div class="main">
+        <div class="weather-details weather-night">
+            <p class="weather-text">Condition</p>
+            <div class="weather-content">
+                <p class="temprature">00.0&deg;</p>
+                <div class="separator"></div>
+                <div class="day-location">
+                    <p class="day-date">yyyy-mm-dd 00:00</p>
+                    <div class="location">
+                        <img class="location-icon" src="./images/location.svg" alt="location">
+                        <p class="city-name">Location</p>
+                    </div>
+                </div>
+            </div>
+            <div class="sunny-image weather-image"> <!-- pos abs w.r.t weather-details -->
+                <div class="sunny-inner weather-inner"> <!-- pos relative -->
+                    <div class="sun"></div> <!-- pos abs w.r.t weather-inner -->
+                    <div class="sun-shine-light"></div> <!-- pos abs w.r.t weather-inner -->
+                    <div class="sun-shine-lighter"></div> <!-- pos abs w.r.t weather-inner -->
+                </div>
+            </div>
+            <div class="night-image weather-image">
+                <div class="night-inner weather-inner">
+                    <img class="cloud-image" src="./images/cloud.svg" alt="cloud-night">
+                    <img class="moon" src="./images/moon.svg" alt="moon image">
+                </div>
+            </div>
+            <div class="rainy-image weather-image">
+                <div class="rainy-inner weather-inner">
+                    <img class="cloud-image" src="./images/cloud.svg" alt="Sunny">
+                    <img class="thunder" src="./images/thunder.svg" alt="thunder">
+                </div>
+            </div>
+
+            <div class="rain-cloud-drops">
+                <div>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="not-found">
+        <p>Location not found, Please enter correct location.</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

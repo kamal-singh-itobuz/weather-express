@@ -1,9 +1,11 @@
 import express from 'express';
+import cors from 'cors';
 import {data} from './data.js';
 
 const app = express();
 const PORT = 5000;
 
+app.use(cors());
 app.get('/', (req, res) => {
     res.status(200).send({data: JSON.stringify(data), message: "Whole Data", status: 200});
 });
